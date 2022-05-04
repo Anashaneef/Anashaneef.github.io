@@ -183,6 +183,7 @@ p {
 #education .card:hover {
     transition: all .5s ease;
     transform: scale(1.2);
+    box-shadow: 5px 5px 5px #FFF212;
 }
 
 #education img {
@@ -190,6 +191,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
 #education .glass {
@@ -208,27 +210,6 @@ p {
 
 #education .year {
     font-size: 14px;
-}
-
-#education .float {
-    display: flex;
-    flex: content;
-}
-
-@media only screen and (min-width: 768px) {
-
-    #education .school,
-    #education .year {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    #education .school,
-    #education .year {
-        display: block;
-    }
 }
 
 /* Akhir Education */
@@ -276,6 +257,7 @@ p {
     filter: brightness(70%);
     transition: all .5s ease;
     transform: scale(1.2);
+    box-shadow: 5px 5px 5px #013033;
 }
 
 /* Akhir Photoworks */
@@ -344,10 +326,10 @@ p {
     }
 
     #contact hr {
-        color: #FFFFFF;
+        color: #FFF212;
         display: block;
         height: 1px;
-        border-bottom: 3px solid #FFFFFF;
+        border-bottom: 3px solid #FFF212;
         opacity: 100% !important;
         max-width: 100px;
         margin-left: auto;

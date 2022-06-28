@@ -44,11 +44,5 @@ $(document).ready(function () {
             }
         }
     })
-
-    // window.addEventListener('scroll', () => {
-    //     const scrolled = window.scrollY;
-
-    //     console.log(scrolled);
-    // })
-    // Akhir Navbar
+    // End of Navbar
 });

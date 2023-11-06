@@ -29,61 +29,61 @@
 
 		<!-- Live Style Switcher - demo only -->
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="blue"
 			href="css/skins/blue.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="green"
 			href="css/skins/green.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="yellow"
 			href="css/skins/yellow.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="blueviolet"
 			href="css/skins/blueviolet.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="goldenrod"
 			href="css/skins/goldenrod.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="magenta"
 			href="css/skins/magenta.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="orange"
 			href="css/skins/orange.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="purple"
 			href="css/skins/purple.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="red"
 			href="css/skins/red.css"
 		/>
 		<link
-			rel="alternate stylesheet"
+			rel="stylesheet"
 			type="text/css"
 			title="yellowgreen"
 			href="css/skins/yellowgreen.css"
@@ -92,6 +92,9 @@
 
 		<!-- Modernizr JS File -->
 		<script src="js/modernizr.custom.js"></script>
+
+		<!-- Save color to local storage -->
+		<script src="js/colorSaver.js"></script>
 	</head>
 
 	<body class="about">
@@ -103,95 +106,104 @@
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('purple');"
+							onclick="setColorPicked('purple');"
 							title="purple"
 							class="color"
-							><img src="img/styleswitcher/purple.png" alt="purple"
-						/></a>
+						>
+							<img src="img/styleswitcher/purple.png" alt="purple" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('red');"
+							onclick="setColorPicked('red');"
 							title="red"
 							class="color"
-							><img src="img/styleswitcher/red.png" alt="red"
-						/></a>
+						>
+							<img src="img/styleswitcher/red.png" alt="red" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('blueviolet');"
+							onclick="setColorPicked('blueviolet');"
 							title="blueviolet"
 							class="color"
-							><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"
-						/></a>
+						>
+							<img src="img/styleswitcher/blueviolet.png" alt="blueviolet" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('blue');"
+							onclick="setColorPicked('blue');"
 							title="blue"
 							class="color"
-							><img src="img/styleswitcher/blue.png" alt="blue"
-						/></a>
+						>
+							<img src="img/styleswitcher/blue.png" alt="blue" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('goldenrod');"
+							onclick="setColorPicked('goldenrod');"
 							title="goldenrod"
 							class="color"
-							><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"
-						/></a>
+						>
+							<img src="img/styleswitcher/goldenrod.png" alt="goldenrod" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('magenta');"
+							onclick="setColorPicked('magenta');"
 							title="magenta"
 							class="color"
-							><img src="img/styleswitcher/magenta.png" alt="magenta"
-						/></a>
+						>
+							<img src="img/styleswitcher/magenta.png" alt="magenta" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('yellowgreen');"
+							onclick="setColorPicked('yellowgreen');"
 							title="yellowgreen"
 							class="color"
-							><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"
-						/></a>
+						>
+							<img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('orange');"
+							onclick="setColorPicked('orange');"
 							title="orange"
 							class="color"
-							><img src="img/styleswitcher/orange.png" alt="orange"
-						/></a>
+						>
+							<img src="img/styleswitcher/orange.png" alt="orange" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('green');"
+							onclick="setColorPicked('green');"
 							title="green"
 							class="color"
-							><img src="img/styleswitcher/green.png" alt="green"
-						/></a>
+						>
+							<img src="img/styleswitcher/green.png" alt="green" />
+						</a>
 					</li>
 					<li>
 						<a
 							href="#"
-							onclick="setActiveStyleSheet('yellow');"
+							onclick="setColorPicked('yellow');"
 							title="yellow"
 							class="color"
-							><img src="img/styleswitcher/yellow.png" alt="yellow"
-						/></a>
+						>
+							<img src="img/styleswitcher/yellow.png" alt="yellow" />
+						</a>
 					</li>
 				</ul>
-
 				<div id="hideSwitcher">&times;</div>
 			</div>
 		</div>
@@ -322,7 +334,12 @@
 								</p>
 							</div>
 							<div class="col-12 mt-3">
-								<a href="https://drive.google.com/file/d/1EZfFM9zinh31lhSuMxv3MQt5CtAoQ5WW/view?usp=sharing" target=”_blank” class="btn btn-download">View CV</a>
+								<a
+									href="https://drive.google.com/file/d/1EZfFM9zinh31lhSuMxv3MQt5CtAoQ5WW/view?usp=sharing"
+									target="”_blank”"
+									class="btn btn-download"
+									>View CV</a
+								>
 							</div>
 						</div>
 					</div>

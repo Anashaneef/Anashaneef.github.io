@@ -1934,6 +1934,8 @@ body.light hr.separator {
 		max-width: 900px;
 		margin-left: auto;
 		margin-right: auto;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.research-card:hover {
@@ -1943,18 +1945,25 @@ body.light hr.separator {
 
 	.research-card h4 {
 		font-size: 20px;
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 		color: #fff;
+	}
+
+	.research-tag {
+		margin-bottom: 10px;
 	}
 
 	.research-meta {
 		font-size: 14px;
 		color: #bbb;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 
 	.research-links {
-		margin-top: 5px;
+		margin-top: 8px;
+		display: flex;
+		gap: 15px;
+		flex-wrap: wrap;
 	}
 
 	.research-links a {
@@ -2018,5 +2027,31 @@ body.light hr.separator {
 
 	.btn-porto-action-single {
 		padding: 0 30%;
+	}
+}
+
+@media (max-width: 768px) {
+	.research-card {
+		padding: 20px;
+	}
+
+	.research-card h4 {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+
+	.research-meta {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+	.research-tag {
+		font-size: 11px;
+		padding: 4px 10px;
+		margin-bottom: 12px;
+	}
+
+	.research-links {
+		margin-top: 12px;
 	}
 }

@@ -726,6 +726,11 @@ body.light hr.separator {
 	background-color: #111;
 }
 
+.c100 span i {
+	font-size: 32px;
+	line-height: 100px;
+}
+
 /*** Portfolio ***/
 .portfolio .main-content {
 	padding-bottom: 60px;
@@ -827,8 +832,12 @@ body.light hr.separator {
 	overflow: hidden;
 	-webkit-perspective: 1000px;
 	perspective: 1000px;
-	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-	transition: opacity 0.5s, visibility 0s 0.5s;
+	-webkit-transition:
+		opacity 0.5s,
+		visibility 0s 0.5s;
+	transition:
+		opacity 0.5s,
+		visibility 0s 0.5s;
 	text-align: left;
 }
 
@@ -890,8 +899,12 @@ body.light hr.separator {
 .portfolio .slideshow ul > li.current:after {
 	visibility: hidden;
 	opacity: 0;
-	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
-	transition: opacity 0.3s, visibility 0s 0.3s;
+	-webkit-transition:
+		opacity 0.3s,
+		visibility 0s 0.3s;
+	transition:
+		opacity 0.3s,
+		visibility 0s 0.3s;
 }
 
 .portfolio .slideshow figure {
@@ -1493,8 +1506,10 @@ body.light hr.separator {
 		border-radius: 3px;
 		z-index: 1;
 		transform-origin: 5px 0;
-		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-			background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+		transition:
+			transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+			background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+			opacity 0.55s ease;
 	}
 
 	#menuToggle > span:first-child {
@@ -1890,6 +1905,77 @@ body.light hr.separator {
 
 	.portfolio .slideshow nav {
 		height: 62px;
+	}
+
+	.research-section {
+		padding: 80px 0;
+		background: #0f0f0f;
+	}
+
+	.section-title {
+		font-size: 36px;
+		font-weight: 800;
+		margin-bottom: 50px;
+		color: #fff;
+	}
+
+	.section-title span {
+		color: #ffb400;
+	}
+
+	.research-card {
+		background: #1a1a1a;
+		padding: 25px 30px;
+		margin-bottom: 25px;
+		border-radius: 12px;
+		text-align: left;
+		transition: all 0.3s ease;
+		border: 1px solid rgba(255, 180, 0, 0.1);
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.research-card:hover {
+		transform: translateY(-5px);
+		border-color: #ffb400;
+	}
+
+	.research-card h4 {
+		font-size: 20px;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+
+	.research-meta {
+		font-size: 14px;
+		color: #bbb;
+		margin-bottom: 5px;
+	}
+
+	.research-links {
+		margin-top: 5px;
+	}
+
+	.research-links a {
+		font-size: 13px;
+		margin-right: 15px;
+		color: #ffb400;
+		text-decoration: none;
+		position: relative;
+	}
+
+	.research-links a::after {
+		content: '';
+		display: block;
+		width: 0%;
+		height: 2px;
+		background: #ffb400;
+		transition: 0.3s;
+	}
+
+	.research-links a:hover::after {
+		width: 100%;
 	}
 
 	.blog .main-content {
